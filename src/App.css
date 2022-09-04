@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.TodoApp {
+  width: 100vw;
+  height: 100vh;
+  /* background: rgb(48, 106, 160); */
+  color: white;
+  position: relative;
+  text-align: center;
+}
+
+
+/* header */
+.header {
+  width: 100%;
+  padding: 0 10px;
+  padding-bottom: 30px;
+}
+
+.header-text {
+  font-size: 40px;
+  font-weight: 550;
+  letter-spacing: 1px;
+}
+
+
+
+/* app container */
+.TodoApp-container {
+  width: 30%;
+  max-width: 450px;
+  background-color: rgb(34, 56, 151);
+  margin: 50px auto;
+  padding: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 30px;
+}
+
+
+
+/* add box  */
+.Add-box {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.add-box__container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  box-sizing: border-box;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.add-todo-input__container {
+  width: 85%;
+  height: 100%;
+}
+
+.add-todo__input {
+  font-size: 1.2rem;
+  width: 90%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.add-todo-button__container {
+  height: 100%;
+  width: 60px;
+  outline: none;
+  margin-right: 5px;
+}
+
+.add-todo__btn {
+  width: 100%;
+  height: 100%;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(151, 29, 29);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  opacity: 0.6;
+  /* pointer-events: none; */
+}
+
+.add-todo__btn:hover {
+  background-color: rgb(237, 241, 245);
+  color: rgb(151, 29, 29);
+}
+
+.add-todo__btn:active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* todo item  */
+.todo-item {
+  width: 100%;
+  height: 40px;
+  margin-top: 1.5rem;
+  position: relative;
+  list-style: none;
+}
+
+.todo-item:last-child {
+  margin-bottom: 1.5rem;
+}
+
+.todo-item__container {
+  height: 100%;
+  width: 60%;
+  box-sizing: border-box;
+  display: flex;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 1.5px solid black;
+  border-radius: 4px;
+}
+
+.todoItem-item {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.todo-item-check-box__wrapper {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.todo-item__check-box {
+  cursor: pointer;
+  position: absolute;
+  left: 0.5rem;
+  width: 20px;
+  height: 100%;
+  top: 50%;
+  transform: translateY(-60%);
+}
+
+.todo-item-content__wrapper {
+  width: 70%;
+  height: 100%;
+  flex-wrap: nowrap;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.todo-item-content {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  flex-wrap: nowrap;
+}
+
+.todo-item-cancel__wrapper {
+  width: 20px;
+  height: 100%;
+  position: absolute;
+  right: 1.5rem;
+}
+
+.todo-item-cancel {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  color: white;
+}
+
+.todo-item-cancel:hover {
+  cursor: pointer;
+  color: black;
+}
+
+
+
+.todo-list {
+  max-height: 400px;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.todo-list li {
+  
+
+}
+
+
+
+/* delete button  */
+.Delete-box {
+  width: 100%;
+  height: 30px;
+}
+
+.delete-box__container {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+.delete-todo-button__container {
+  /* opacity: 0.6; */
+  /* pointer-events: none; */
+}
+
+.delete-button-all {
+  opacity: 0.6;
+}
+
+
+.delete-note__pending-tasks {
+
+}
+
+.pendingTaks {
+
+}
+
+.delete-todo-button__container {
+  height: 100%;
+  width: 20%;
+}
+
+.delete-button-all {
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  color: white;
+  background-color: rgb(151, 29, 29);
+  border: 1px solid transparent;
+  border-radius: 4PX;
+
+  
+}
+
+.delete-button-all:hover {
+  cursor: pointer;
+  color: rgb(151, 29, 29);
+  background-color: white;
+}
